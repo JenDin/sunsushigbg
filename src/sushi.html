@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/css/output.css" />
-    <title>Sticky Footer</title>
+    <title>Sun Sushi</title>
   </head>
 
   <body class="flex flex-col min-h-screen">
-    <!-- Your content goes here -->
-    <nav class="bg-gray-800 p-4">
+    <nav class="bg-black p-4">
       <div class="mx-auto flex justify-between items-center">
         <!-- Logo -->
-        <a href="#" class="text-white text-lg font-bold">Sun Sushi</a>
+        <a href="/src/index.html" class="text-white text-lg font-bold md:ml-20"
+          ><img src="/src/images/logo.png" class="w-[170px]" alt=""
+        /></a>
         <!-- Mobile Menu Button -->
         <button
           id="mobile-menu-btn"
@@ -33,17 +34,18 @@
             ></path>
           </svg>
         </button>
-        <div id="navbar-links" class="hidden sm:flex space-x-4">
-          <a href="/src/sushi.html" class="text-white">Sushi</a>
-          <a href="#" class="text-white">Varmrätter</a>
-          <a href="#" class="text-white">Boba Tea</a>
+        <div id="navbar-links" class="hidden sm:flex space-x-5 md:mr-20">
+          <a href="/src/meny.html" class="text-white text-lg">Sushi</a>
+          <a href="/src/meny.html" class="text-white text-lg">Pokébowl</a>
+          <a href="/src/meny.html" class="text-white text-lg">Varmrätter</a>
+          <a href="#" class="text-white text-lg">Boba Tea</a>
         </div>
       </div>
     </nav>
     <!-- Mobile Menu -->
     <div
       id="mobile-menu"
-      class="fixed inset-0 bg-gray-800 bg-opacity-75 hidden sm:hidden"
+      class="fixed inset-0 bg-black bg-opacity-95 hidden sm:hidden"
     >
       <div class="flex justify-end p-4">
         <button id="close-mobile-menu-btn" class="text-white">
@@ -65,19 +67,338 @@
       </div>
       <div class="flex flex-col items-center">
         <a href="/src/sushi.html" class="text-white py-2">Sushi</a>
+        <a href="#" class="text-white py-2">Pokébowl</a>
         <a href="#" class="text-white py-2">Varmrätter</a>
         <a href="#" class="text-white py-2">Boba Tea</a>
       </div>
     </div>
+
+    <!-- Main content -->
     <main class="flex-1">
-      <!-- Your page content -->
-      <h1 class="text-pink-500">Sushi sidan</h1>
+      <section>
+        <h1
+          class="text-4xl md:text-5xl font-bold text-black text-center mt-8 mb-8"
+        >
+          Sushi
+        </h1>
+
+        <article
+          class="p-6 md:grid md:grid-cols-2 md:gap-8 md:max-w-6xl md:m-auto"
+        >
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Sushi 6 bitar</h2>
+              <p class="italic text-md mb-4">
+                En lax, en avokado, en krabbstick och tre makirullar
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Sushi 8 bitar</h2>
+              <p class="italic text-md mb-4">
+                En lax, en tonfisk, en räka, en krabbstick och fyra makirullar
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Sushi 10 bitar</h2>
+              <p class="italic text-md mb-4">
+                Två lax, en tonfisk, en hälleflundra, en räka, en krabbstick och
+                fyra makirullar
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Sushi 12 bitar</h2>
+              <p class="italic text-md mb-4">
+                Tre lax, en tonfisk, en hälleflundra, en räka, en omelett, en
+                krabbstick och fyra makirullar
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Mamma Sushi</h2>
+              <p class="italic text-md mb-4">
+                En räka, en omelett, en avokado, en krabbstick och fyra
+                makirullar
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Vegansk Sushi</h2>
+              <p class="italic text-md mb-4">
+                En tofupåse, en tofukudde, två avokado och fyra veganska
+                makirullar
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Lax och avokado</h2>
+              <p class="italic text-md mb-4">Laxnigiri och avokadonigiri.</p>
+              <p class="text-sm">Åtta bitar - 75 / 79 kr</p>
+              <p class="text-sm">Tio bitar - 75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Lax och californiarullar</h2>
+              <p class="italic text-md mb-4">
+                Laxnigiri och californiarullar som innehåller krabbstick,
+                philadelpiaost, avokado och gurka
+              </p>
+              <p class="text-sm">Åtta bitar - 75 / 79 kr</p>
+              <p class="text-sm">Tio bitar - 75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Laxnigiri</h2>
+              <p class="italic text-md mb-4">Laxbitar på riskuddar</p>
+              <p class="text-sm">Sex bitar - 75 / 79 kr</p>
+              <p class="text-sm">Åtta bitar - 75 / 79 kr</p>
+              <p class="text-sm">Tio bitar - 75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Flamberad lax</h2>
+              <p class="italic text-md mb-4">
+                Halstrad lax toppad med chilimajonnäs, unagisås och rostad lök
+              </p>
+              <p class="text-sm">Sex bitar - 75 / 79 kr</p>
+              <p class="text-sm">Åtta bitar - 75 / 79 kr</p>
+              <p class="text-sm">Tio bitar - 75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Avokadonigiri</h2>
+              <p class="italic text-md mb-4">Avokadobitar på riskuddar</p>
+              <p class="text-sm">Åtta bitar - 75 / 79 kr</p>
+              <p class="text-sm">Tio bitar - 75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Avokado och californiarullar</h2>
+              <p class="italic text-md mb-4">
+                Avokadonigiri och californiarullar som innehåller krabbstick,
+                philadelpiaost, avokado och gurka
+              </p>
+              <p class="text-sm">Åtta bitar - 75 / 79 kr</p>
+              <p class="text-sm">Tio bitar - 75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Veganskrulle 10 bitar</h2>
+              <p class="italic text-md mb-4">Avokado, gurka och rättika</p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Californiarulle 10 bitar</h2>
+              <p class="italic text-md mb-4">
+                Krabbstick, philadelphiaost, avokado och gurka
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Salmon californiarulle 10 bitar</h2>
+              <p class="italic text-md mb-4">
+                Lax, philadelphiaost, avokado och gurka
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Salmon makirulle 10 bitar</h2>
+              <p class="italic text-md mb-4">Lax, avokado och gurka</p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Tempurarulle 10 bitar</h2>
+              <p class="italic text-md mb-4">
+                Friterad räka, sallad, avokado, chilimajonnäs, unagisås och
+                rostad lök
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Sun Sushirulle 10 bitar</h2>
+              <p class="italic text-md mb-4">
+                Krabbstick, philadelphiaost, avokado, gurka, chilimajonnäs,
+                unagisås och rostad lök
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border border-black hover:border-[#a50601] rounded-md p-4 mb-4 md:mb-0 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[60%]">
+              <h2 class="text-lg font-bold">Kycklingrulle 10 bitar</h2>
+              <p class="text-md italic mb-4">
+                Kyckling, avokado, gurka, chilimajonnäs, unagisås och rostad lök
+              </p>
+              <p class="text-sm">75 / 79 kr</p>
+            </div>
+            <div class="w-[40%]">
+              <img src="/src/images/gothenburg.jpg" class="w-52" alt="" />
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
 
-    <!-- Sticky Footer -->
-    <footer class="bg-gray-800 text-white p-4">
-      <!-- Footer content -->
-      <p>This is my footer!</p>
+    <!-- Footer -->
+    <footer class="bg-black text-white p-8">
+      <div class="md:flex justify-center gap-12">
+        <div class="mb-4">
+          <h3 class="font-bold">Adress</h3>
+          <p>Centralstationen</p>
+          <p>Drottningtorget 4</p>
+          <p>411 03 Göteborg</p>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="font-bold">Telefonnummer</h3>
+          <p>031 - 15 91 80</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold">Öppettider</h3>
+          <p>Måndag - Söndag</p>
+          <p>11:00 - 20:00</p>
+        </div>
+      </div>
     </footer>
     <script src="/src/js/app.js"></script>
   </body>

@@ -8,10 +8,12 @@
   </head>
   <body class="flex flex-col min-h-screen">
     <!-- Navbar -->
-    <nav class="bg-gray-800 p-4">
+    <nav class="bg-black p-4">
       <div class="mx-auto flex justify-between items-center">
         <!-- Logo -->
-        <a href="#" class="text-white text-lg font-bold">Sun Sushi</a>
+        <a href="/src/index.html" class="text-white text-lg font-bold md:ml-20"
+          ><img src="/src/images/logo.png" class="w-[170px]" alt=""
+        /></a>
         <!-- Mobile Menu Button -->
         <button
           id="mobile-menu-btn"
@@ -32,16 +34,18 @@
             ></path>
           </svg>
         </button>
-        <div id="navbar-links" class="hidden sm:flex space-x-4">
-          <a href="/src/sushi.html" class="text-white">Meny</a>
-          <a href="#" class="text-white">Boba Tea</a>
+        <div id="navbar-links" class="hidden sm:flex space-x-5 mr-20">
+          <a href="/src/sushi.html" class="text-white text-lg">Sushi</a>
+          <a href="#" class="text-white text-lg">Pokébowl</a>
+          <a href="#" class="text-white text-lg">Varmrätter</a>
+          <a href="#" class="text-white text-lg">Boba Tea</a>
         </div>
       </div>
     </nav>
     <!-- Mobile Menu -->
     <div
       id="mobile-menu"
-      class="fixed inset-0 bg-gray-800 bg-opacity-80 hidden sm:hidden"
+      class="fixed inset-0 bg-black bg-opacity-95 hidden sm:hidden"
     >
       <div class="flex justify-end p-4">
         <button id="close-mobile-menu-btn" class="text-white">
@@ -62,42 +66,39 @@
         </button>
       </div>
       <div class="flex flex-col items-center">
-        <a href="/src/sushi.html" class="text-white py-2">Meny</a>
+        <a href="/src/sushi.html" class="text-white py-2">Sushi</a>
+        <a href="#" class="text-white py-2">Pokébowl</a>
+        <a href="#" class="text-white py-2">Varmrätter</a>
         <a href="#" class="text-white py-2">Boba Tea</a>
       </div>
     </div>
+
     <!-- Main content -->
-    <main class="flex-1"></main>
+    <main class="flex-1">
+      <section
+        class="bg-hero bg-cover bg-center bg-no-repeat h-screen text-pink-500"
+      ></section>
+    </main>
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-10">
-      <div class="text-center mb-10">
-        <p class="text-3xl">Sun Sushi</p>
-      </div>
+    <!-- Footer -->
+    <footer class="bg-black text-white p-8">
       <div class="md:flex justify-center gap-12">
-        <div>
-          <p>Adress</p>
+        <div class="mb-4">
+          <h3 class="font-bold">Adress</h3>
           <p>Centralstationen</p>
           <p>Drottningtorget 4</p>
-          <p class="mb-4">411 03 Göteborg</p>
-          <p>Telefonnummer</p>
-          <p>031 - 15 91 80</p>
-          <p class="hidden md:block text-xs mt-20">&copy; Sun Sushi AB</p>
+          <p>411 03 Göteborg</p>
         </div>
-        <hr
-          class="my-6 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"
-        />
-        <div
-          class="hidden md:inline-block h-[250px] min-h-[1em] w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
-        ></div>
+
+        <div class="mb-4">
+          <h3 class="font-bold">Telefonnummer</h3>
+          <p>031 - 15 91 80</p>
+        </div>
+
         <div>
-          <p>Öppettider</p>
-          <p>Måndag <span class="ml-2">11:00 - 20:00</span></p>
-          <p>Tisdag <span class="ml-4">11:00 - 20:00</span></p>
-          <p>Onsdag <span class="ml-2.5">11:00 - 20:00</span></p>
-          <p>Torsdag <span class="ml-2">11:00 - 20:00</span></p>
-          <p>Fredag <span class="ml-4">11:00 - 20:00</span></p>
-          <p>Lördag <span class="ml-4">11:00 - 20:00</span></p>
-          <p>Söndag <span class="ml-3">11:00 - 20:00</span></p>
+          <h3 class="font-bold">Öppettider</h3>
+          <p>Måndag - Söndag</p>
+          <p>11:00 - 20:00</p>
         </div>
       </div>
     </footer>
