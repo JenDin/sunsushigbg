@@ -719,6 +719,11 @@ video {
   padding-bottom: 0px;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -756,6 +761,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.decoration-white {
+  text-decoration-color: #fff;
+}
+
 .hover\:border-\[\#a50601\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(165 6 1 / var(--tw-border-opacity));
@@ -764,6 +773,15 @@ video {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.active\:text-red-500:active {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.active\:underline:active {
+  text-decoration-line: underline;
 }
 
 @media (min-width: 640px) {
