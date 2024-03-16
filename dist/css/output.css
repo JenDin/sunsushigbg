@@ -780,6 +780,10 @@ video {
   width: 30px;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1295,6 +1299,10 @@ video {
     width: 60%;
   }
 
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .md\:max-w-6xl {
     max-width: 72rem;
   }
@@ -1360,5 +1368,10 @@ video {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
